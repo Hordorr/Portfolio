@@ -55,8 +55,8 @@ header{
 	justify-content: center;
 	align-items: center;
 	background-color: black;
-	border-left: solid white 0.5px;
-	border-right: solid white 0.5px;
+	border-left: solid rgba(255,255,255,0) 0.5px;
+	border-right: solid rgba(255,255,255,0) 0.5px;
 
 }
 .navbar ul a li{
@@ -78,7 +78,7 @@ header{
 }
 #bloc1{
 	margin-top: 5vh;
-	background-color:white;
+	background-color:#ffffff;
 	background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: right top;
@@ -129,23 +129,33 @@ header{
 
 #bloc2{
 	background-color: black;
-}
-h2{
-	padding-top: 80px;
-	padding-left: 5%;
-	font-size: 40px;
-	font-family: 'Montserrat';
-	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-#bloc2 h2{
-	color: black;
+#bloc2 img:nth-child(1){
+	background-color:#ffffff;
+	border-radius: 20px;
+	
 }
+#bloc2 div img:nth-child(2){
+	background-color: #ffffff;
+	border-radius: 20px;
 
-#bloc2 iframe{
-	margin: auto;
-	margin-top: 100px;
-	box-shadow: 0 10px 38px rgba(0,0,0,0.30), 0 19px 20px rgba(0,0,0,0.22);
+}
+#bloc2 div img:nth-child(3){
+	background-color: #ffffff;
+	border-radius: 20px;
+
+}
+#bloc2 div img:nth-child(4){
+	background-color: #ffffff;
+	border-radius: 20px;
+
+
 }
 
 #vid{
@@ -155,13 +165,11 @@ h2{
 }
 
 #bloc3{
-	background-color:white ;
+	background-color:#ffffff ;
 	align-items:center;
 }
 
-#bloc3 h2{
-	color: white;
-}
+
 #intro{
 	margin-right: 200px;
 	margin-left: 200px;
