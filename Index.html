@@ -5,15 +5,17 @@
 <link rel="stylesheet" href="./Index_files/style.css">
 <link rel="shortcut icon" href="https://lalegumerie.000webhostapp.com/logos/iconeCarotte.png">
 <link href="./Index_files/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline|Roboto" rel="stylesheet">
 
 <body>
 <header id="header">
 	 <div class="navbar" id="nav">
        <ul>
-			<li><a href="#bloc2">Vidéo</a></li>
-			<li><a href="#bloc3">Notre projet</a></li>
-			<li><a href="#bloc4">Notre site</a></li>
-			<li><a href="#bloc5">Contact</a></li>
+			<a href="#bloc1"><li>Menu</li></a>
+			<a href="#bloc2"><li>Mon travail</li></a>
+			<a href="#bloc3"><li>Mon projet</li></a>
+			<a href="#bloc4"><li>Contact</li></a>
+
        </ul>
 
 	 </div>
@@ -21,45 +23,25 @@
 </header>
 
 <div id="bloc1">
-Guillaume Lesage
+<p class="titre">G</p>
+<p class="titre">u</p>
+<p class="titre">i</p>
+<p class="titre">l</p>
+<p class="titre">l</p>
+<p class="titre">a</p>
+<p class="titre">u</p>
+<p class="titre">m</p>
+<p class="titre">e</p>
 </div>
 <div id="bloc2">
-	<h2>Notre vidéo de présentation</h2>
-	
+
+
 	</div>
 <div id="bloc3">
-	<h2>À propos de nous</h2>
-	<div id="intro">La Légumerie est une start-up proposant un service révolutionnaire. Abandonnez les supermarchés, laissez les légumes étrangers dans les gondoles, retrouvez le sourire grâce au local ! <br><br>Nous travaillons pour vous proposer les produits de la meilleure qualité possible, venant de votre région, tout en rendant le monde plus vert, plus juste, en somme : meilleur.
-</div>
-	<div id="txtEtTitre">
-	<div id="ex1">
-		<div class="titre"><img src="./Index_files/poivron.png"><br><br>Proximité</div>
-		<div class="txt">Le premier pilier de notre service est de proposer des produits locaux. En utilisant notre service, vous soutenez le projet de rendre le monde plus vert à votre mesure.
-		</div>
-	</div>
-	<div id="ex2">
-		<div class="titre"><img src="./Index_files/brocoli.png"><br><br>Connexion</div>
-
-		<div class="txt">Le lien entre les individus est primordial pour la Légumerie. Notre service vous propose de vous reconnecter aux enjeux proches de chez vous pour reconstituer le tissu social. </div>
-	</div>
-	<div id="ex3">
-		<div class="titre"><img src="./Index_files/radis.png"><br><br>Respect</div>
-
-		<div class="txt">La responsabilité sociale passe par une rémunération décente des producteurs. Nous nous engageons à appliquer la justice sociale en ne prenant pas de marge sur les prix fixés par les producteurs.
-	</div><br>
-		<a href="enSavoirPlus.html" id="plus"><p>Notre fine équipe<br> de start-upers</p></a>
-	</div>
-	</div>
 
 </div>
+
 <div id="bloc4">
-	<h2>Comment cela fonctionne ?</h2><h2>
-		<div id="b4exemple">
-		<p><img id="b4menu" src="./Index_files/agric.png" alt="le agric"></p>
-		<p><img id="b4carte" src="./Index_files/carte.png" alt="Google map"></p>
-	</div>
-</h2></div>
-<div id="bloc5">
 <h2>Nous contacter</h2>
 <div class="container">
   <form action="https://lalegumerie.000webhostapp.com/action_page.php">
@@ -79,39 +61,19 @@ Guillaume Lesage
   </form>
 </div>
 </div>
-<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_lalegumerie&amp;utm_content=footer_img"><img src="./Index_files/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div>
-<footer id="footer">
-<div id="copyright">
-	<p>© 2018, la légumerie</p>
-</div>
-<div id="normandie">
-	<p><img src="./Index_files/normandie.png"></p><br>
-	<p>Confectionné en Normandie</p>
-</div>
-<div id="réseaux">
-	<div id="texte">
-	<a target="_blank"><p>La Légumerie </p></a>
-	<a target="_blank"><p>@LaLegumerie </p></a>
-	<a target="_blank"><p>la_legumerie </p></a>
-	</div>
-	<div>
-	<a target="_blank"><p><img src="./Index_files/facebook.png"></p></a>
-	<a target="_blank"><p><img src="./Index_files/twitter.png"></p></a>
-	<a target="_blank"><p><img src="./Index_files/instagram.png"></p></a>
 
-</div>
-</div></footer>
+
 <script type="text/javascript">
-var  header = document.getElementById('header');
-var logoHeader = document.getElementById('logoHeader');
-window.onscroll = function(){
-	if (window.pageYOffset>1000){
-		header.style.background="rgba(0,0,0,0.5)";
-		logoHeader.style.background="url(logos/couleur.png)"}
-
-	else{
-		header.style.background="transparent";
-		logoHeader.style.background="url(logos/logoNoir&Blanc.png)"}
+function randcolor(){
+	return 'hsla(' + (Math.random() * 360) + ', 100%, 50%, 1)';
 }
+
+function changec(){
+	titre.style.color=randcolor()
+}
+var titre=document.getElementsByClassName('titre');
+
+
+
 </script>
 </body></html>
