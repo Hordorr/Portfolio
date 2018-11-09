@@ -1,0 +1,352 @@
+*{
+	margin:0;
+	padding:0;
+	scroll-behavior: smooth;
+	font-family: Montserrat;
+	color: white;
+	transition: all .2s ease-in-out;
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body{
+	display:flex;
+	flex-direction: column;
+	background-color: #f6F6F6
+}
+
+#bloc1,#bloc2,#bloc3,#bloc4,#bloc5{
+	height:1080px;
+	width:100%;
+	box-shadow: -5px -15px 33px -1px rgba(0,0,0,0.3);
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+
+	transition: .5s;
+
+}
+
+
+
+.navbar{
+	width: 100%;
+	display: flex;
+	felx-direction:row;
+	border:solid black 1px;
+
+}
+
+
+.box{
+	width: 80%;
+	height: 2000px;
+	background: green;
+	margin: 20px auto;
+
+}
+#bloc1{
+	background-color:skyblue;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right top;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1200%;
+}
+
+
+
+#bloc1 img{
+	padding-top: 300px;
+	display: block;
+	margin: auto;
+}
+
+#bloc2 #vid{
+	display: block;
+}
+
+h2{
+	padding-top: 80px;
+	padding-left: 5%;
+	font-size: 40px;
+	font-family: 'Montserrat';
+	color: black;
+}
+
+#bloc2 h2{
+	color: black;
+}
+
+#bloc2 iframe{
+	margin: auto;
+	margin-top: 100px;
+	box-shadow: 0 10px 38px rgba(0,0,0,0.30), 0 19px 20px rgba(0,0,0,0.22);
+}
+
+#vid{
+	margin-top: 1000px;
+	width: 848px;
+	height: 480px;
+}
+
+#bloc3{
+	background-color:#27AE60 ;
+	align-items:center;
+}
+
+#bloc3 h2{
+	color: white;
+}
+#intro{
+	margin-right: 200px;
+	margin-left: 200px;
+	margin-top: 50px;
+	font-size: 18px;
+	line-height: 30px;
+	text-indent: 2em;
+}
+#txtEtTitre{
+	display:flex;
+	justify-content: space-between;
+	margin: 30px 200px 200px;
+	line-height: 25px;
+	font-size:20px;
+}
+
+#ex1,#ex2,#ex3{
+	width:280px;
+	height:50%;
+	font-size:18px;
+	text-align: justify;
+	line-height: 25px;
+	text-indent:2em;
+}
+
+.titre{
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 24px;
+}
+
+.titre img{
+	height: 120px;
+}
+#plus{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#plus p{
+	padding: 5px;
+	border: 4px solid white;
+	text-align: center;
+
+}
+#plus p:hover{
+	transform:scale(1.1);
+	opacity: 0.5;
+}
+#bloc4{
+height: 1080px;
+}
+
+#b4exemple{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+
+}
+
+#b4menu{
+	margin: 50px;
+}
+
+
+#b4carte{
+	box-shadow:0 10px 38px rgba(0,0,0,0.30), 0 19px 20px rgba(0,0,0,0.22);
+	margin: 50px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 0px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #2DC76E;
+}
+
+input[type=button] {
+    background-color: #27AE60;
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#bloc5{
+	background-color: #27AE60;
+	color: white;
+	height: 670px;
+}
+#bloc5 h2{
+	margin-bottom: 30px;
+	color: white;
+}
+#bloc5 label{
+	color: white;
+}
+
+::placeholder {
+   color: white;
+}
+.container {
+	width: 35%;
+    background-color: #27AE60;
+    margin: auto;
+}
+
+
+footer{
+	width:100%;
+	height:200px;
+	background-color:#161616;
+	font-family: 'Montserrat';
+	font-size:16px;
+	display:flex;
+	justify-content: space-between;
+    align-items: center;
+    opacity: 0.9;
+    box-shadow: -5px -15px 33px -1px rgba(0,0,0,0.3);;
+}
+
+#copyright, #réseaux{
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+#normandie{
+	text-align: center;
+}
+
+#réseaux{
+	display: flex;
+	align-items: center;
+}
+
+#réseaux img{
+	padding: 5px;
+}
+
+#réseaux #texte{
+	line-height: 55px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#réseaux p:hover{
+	opacity: 0.5;
+	transition: .5s;
+}
+
+/*/////////////////////////////////////////////////*/
+/* PAGE "En savoir plus" */
+/*/////////////////////////////////////////////////*/
+
+#bodyPlus{
+	background: url("img/champBlurOpacité.png");
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#headerPlus{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(0,0,0,0.5);
+	transition: .5s;
+
+}
+
+#logoHeaderPlus{
+	width: 128px;
+	height: 60px;
+	margin: 10px;
+	background: url(logos/couleur.png);
+	opacity: 0.9;
+}
+.navbar ul li:hover, #logoHeaderPlus:hover{
+	opacity: 0.5;
+	transition: .5s ease;
+}
+#logoHeaderPlus:hover{
+	transform: scale(1.05);
+}
+
+
+#blocPhotosTexte{
+	margin:100px 29% 100px;
+	display: flex;
+	justify-content: center;
+}
+#boiteTexte{
+	width: 500px;
+
+}
+.sousBoiteTexte{
+	height: 160px;
+	margin: 0px 0px 25px 30px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.sousSousBoiteTexte{
+	height: 80px;
+	padding: 20px;
+}
+
+.sousBoiteTexte p {
+	color: black;
+
+}
+
+.titreDesc{
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+
+.cadrePhoto{
+	height: 160px;
+	display: flex;
+	align-items: center;
+	margin: 0px 0px 25px 0px;
+}
