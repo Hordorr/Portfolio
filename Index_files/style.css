@@ -39,17 +39,17 @@ header{
 
 
 
-.navbar{
-
+.nav{
+	z-index: 10;
 	width: 100%;
 	position: fixed;
 }
-.navbar{
+.nav{
 	display: flex;
 	flex-direction: row;
 }
-.navbar a{
-	z-index: 2;
+.nav a{
+
 	height: 7vh;
 	width: 25%;
 
@@ -61,10 +61,10 @@ header{
 	border-right: solid rgba(255,255,255,0) 0.5px;
 
 }
-.navbar a{
+.nav a{
 	color:white;
 }
-.navbar a:nth-child(1):hover{
+.nav a:nth-child(1):hover{
 	color:white;
 	background-color:rgba(127, 0, 255,0.8);
 
@@ -72,21 +72,21 @@ header{
 
 
 }
-.navbar a:nth-child(2):hover{
+.nav a:nth-child(2):hover{
 	color:white;
 	background-color: rgba(0, 255, 144,0.8);
 	font-size: 25px;
 
 
 }
-.navbar a:nth-child(3):hover{
+.nav a:nth-child(3):hover{
 	color:white;
 	background-color: rgba(  255, 128, 0 ,0.8);
 	font-size: 25px;
 
 
 }
-.navbar a:nth-child(4):hover{
+.nav a:nth-child(4):hover{
 	color:white;
 	background-color: rgba(255, 0, 0,0.8);
 	font-size: 25px;
@@ -171,6 +171,7 @@ header{
 	transition-property: transform;
 	transition-duration: 5s;
 	background-image: url("../Image/Couleur.png");
+
 	background-position: center;
 
 
@@ -180,7 +181,7 @@ header{
 	width: 100%;
 }
 .content{
-	background-image: url("../Image/couleur.png")
+
 }
 .p1{
 	position: absolute;
@@ -197,7 +198,7 @@ header{
 	justify-content:center;
 	background-color: black;
 	height: 100%;
-	transition: 1.5s;
+		transition: 1.5s;
 
 }
 
@@ -205,7 +206,16 @@ header{
 	left:-100%;
 
 }
+#demo{
+	position: absolute;
+	height: auto;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 9%;
+	border: black solid 2px;
 
+
+}
 
 
 
